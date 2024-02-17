@@ -189,11 +189,11 @@ function NotificationPage() {
                   open: true,
                   key: 'shop_introduce',
                   content: shopIntroduce.value,
-                  title: '商城说明'
+                  title: '商城额度说明'
                 })
               }}
             >
-              修改商城说明
+              修改商城额度说明
             </Button>
             <Button
               key="user"

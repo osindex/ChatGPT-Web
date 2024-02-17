@@ -27,7 +27,7 @@ function Layout(props: Props) {
     const { menuExtraRender = () => <></>, menuItemRender = () => undefined } = props;
     return (
         <ProLayout
-            title="ChatWeb"
+            title="PlanChat"
             logo={logo}
             layout="mix"
             splitMenus={false}

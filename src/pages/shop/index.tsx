@@ -123,6 +123,7 @@ function GoodsPay() {
       message.warning('请输入卡密')
       return
     }
+    carmi = carmi.trim()
     setCarmiLoading(true)
     postUseCarmi({ carmi })
       .then((res) => {
@@ -164,6 +165,7 @@ function GoodsPay() {
               <h4>卡密充值</h4>
               <Input.Search
                 loading={carmiLoading}
+                // onBlur={handleBlur} 
                 placeholder="请输入充值卡密"
                 allowClear
                 enterButton="充值"
