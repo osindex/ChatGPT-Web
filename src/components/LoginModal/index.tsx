@@ -27,14 +27,14 @@ export function LoginCard(props: {
   onSuccess: () => void
 }) {
 
-  const [loginType, setLoginType] = useState<LoginType>('code');
+  const [loginType, setLoginType] = useState<LoginType>('password');
 
   return (
     <LoginForm<RequestLoginParams>
       form={props.form}
       logo={import.meta.env.VITE_APP_LOGO}
       title=""
-      subTitle="全网最便宜的人工智能对话"
+      subTitle="与研究有关的人工智能对话"
       // actions={(
       //   <Space>
       //     <HeartFilled />

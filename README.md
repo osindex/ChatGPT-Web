@@ -62,3 +62,17 @@ pm2 start
 ## 开源协议
 
 [![License MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/vastxie/ChatGpt-Web/blob/master/license)
+
+```
+oneai
+TZ=Asia/Shanghai
+SQL_DSN="oneai:ejeCJsDzsfa5mdFH@tcp(host:3306)/oneapi"
+
+docker run --name one-api --network=host -d --restart always -p 3000:3000 -e SQL_DSN="oneapi:62DiDPLCBAN8xaZD@tcp(localhost:3306)/oneapi" -e TZ=Asia/Shanghai -v /www/wwwroot/oneai:/data justsong/one-api
+
+
+/www/wwwroot/oneai	rw	/data
+
+docker run --name one-api -d --restart always -p 3000:3000 -e SQL_DSN="oneai:ejeCJsDzsfa5mdFH@tcp(192.168.13.71:3306)/oneapi" -e TZ=Asia/Shanghai -v /www/wwwroot/oneai:/data justsong/one-api
+
+```
